@@ -80,7 +80,7 @@ class JekyllOgImage::Generator < Jekyll::Generator
   end
 
   def add_publish_date(canvas, post, config)
-    date = post.date.strftime("%B %d, %Y")
+    date = post.date.strftime("%b %-d, %Y")
 
     canvas.text(date,
       gravity: :sw,
