@@ -72,7 +72,7 @@ class JekyllOgImage::Generator < Jekyll::Generator
 
   def add_header(canvas, post, config)
     canvas.text(post.data["title"],
-      width: config.image ? 870 : 1040,
+      width: config.image ? 870 : 960,
       color: config.header.color,
       dpi: 400,
       font: config.header.font_family
